@@ -26,6 +26,7 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 - `cffi`
 - `torchtext`
 - `dill`
+- `Cython`
 
 **Data**
 
