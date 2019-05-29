@@ -21,8 +21,11 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 - `torchfile`
 - `nltk`
 - `scikit-image`
-
-
+- `spacy`
+- `PyYAML`
+- `cffi`
+- `torchtext`
+- `dill`
 
 **Data**
 Download [coco](http://cocodataset.org/#download) dataset and extract the images to `data/coco/`
