@@ -39,7 +39,7 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 **Sampling**
 
 
-### Citing AttnGAN
+### Citing Obj-GAN
 If you find Obj-GAN useful in your research, please consider citing:
 
 ```
