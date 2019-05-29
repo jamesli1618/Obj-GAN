@@ -29,5 +29,23 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 
 **Data**
 
-1. Download our preprocessed metadata for [coco](https://drive.google.com/open?id=1rSnbIGNDGZeHlsUlLdahj0RJ9oo6lgH9) and save them to `data/`
+1. Download the preprocessed metadata for [coco](https://drive.google.com/open?id=1rSnbIGNDGZeHlsUlLdahj0RJ9oo6lgH9) and save them to `data/`
 2. Download [coco](http://cocodataset.org/#download) dataset and extract the images to `data/coco/`
+
+**Training**
+
+**Pretrained Model**
+
+**Sampling**
+
+
+### Citing AttnGAN
+If you find Obj-GAN useful in your research, please consider citing:
+
+```
+@article{objgan19,
+  author    = {Wenbo, Pengchuan Zhang, Lei Zhang, Qiuyuan Huang, Xiaodong He, Siwei Lyu, Jianfeng Gao},
+  title     = {Object-driven Text-to-Image Synthesis via Adversarial Training},
+  Year = {2019},
+  booktitle = {{CVPR}}
+}
