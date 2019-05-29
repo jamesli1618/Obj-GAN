@@ -9,3 +9,20 @@ Pytorch implementation for reproducing Obj-GAN results in the paper [Object-driv
 
 <img src="framework.png"/>
 
+### Dependencies
+python 3.6
+
+Pytorch 0.4.1
+
+In addition, please add the project folder to PYTHONPATH and `pip install` the following packages:
+- `python-dateutil`
+- `easydict`
+- `pandas`
+- `torchfile`
+- `nltk`
+- `scikit-image`
+
+
+
+**Data**
+Download [coco](http://cocodataset.org/#download) dataset and extract the images to `data/coco/`
