@@ -43,7 +43,7 @@ If you find Obj-GAN useful in your research, please consider citing:
 
 ```
 @article{objgan19,
-  author    = {Wenbo, Pengchuan Zhang, Lei Zhang, Qiuyuan Huang, Xiaodong He, Siwei Lyu, Jianfeng Gao},
+  author    = {Wenbo Li, Pengchuan Zhang, Lei Zhang, Qiuyuan Huang, Xiaodong He, Siwei Lyu, Jianfeng Gao},
   title     = {Object-driven Text-to-Image Synthesis via Adversarial Training},
   Year = {2019},
   booktitle = {{CVPR}}
