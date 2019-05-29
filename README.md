@@ -28,4 +28,6 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 - `dill`
 
 **Data**
-Download [coco](http://cocodataset.org/#download) dataset and extract the images to `data/coco/`
+
+1. 1. Download our preprocessed metadata for [coco](https://drive.google.com/open?id=1rSnbIGNDGZeHlsUlLdahj0RJ9oo6lgH9) and save them to `data/`
+2. Download [coco](http://cocodataset.org/#download) dataset and extract the images to `data/coco/`
