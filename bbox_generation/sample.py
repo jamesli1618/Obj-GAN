@@ -44,7 +44,7 @@ parser.add_argument('--gaussian_dict_path', action='store', dest='gaussian_dict_
     default='../data/coco/bbox_label/gaussian_dict.npy',
     help='Path to gaussian dict')
 parser.add_argument('--vocab_path', action='store', dest='vocab_path', 
-    default='../data/coco/captions_backup2.pickle',
+    default='../data/coco/captions.pickle',
     help='Path to the vocab path')
 parser.add_argument('--box_saving_folder', action='store', dest='box_saving_folder', 
     default='../data/coco/gen_masks',
@@ -53,7 +53,7 @@ parser.add_argument('--expt_dir', action='store', dest='expt_dir', default='expe
     help='Path to experiment directory. If load_checkpoint is True, \
     then path to checkpoint directory has to be provided')
 parser.add_argument('--load_checkpoint', action='store', dest='load_checkpoint', 
-    default='bbox_ckpt', help='The name of the checkpoint to load, \
+    default='../data/pretrained/coco/bbox_ckpt', help='The name of the checkpoint to load, \
     usually an encoded time string')
 parser.add_argument('--resume', action='store_true', dest='resume', default=False, 
     help='Indicates if training has to be resumed from the latest checkpoint')
