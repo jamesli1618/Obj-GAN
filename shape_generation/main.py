@@ -37,7 +37,7 @@ def parse_args():
     parser.add_argument('--GLB_LAMBDA', type=float, default=1.0)
     parser.add_argument('--PCP_LAMBDA', type=float, default=10.0)
     parser.add_argument('--R_NUM', type=int, default=1)
-    parser.add_argument('--BATCH_SIZE', type=int, default=10) # 44
+    parser.add_argument('--BATCH_SIZE', type=int, default=40)
     parser.add_argument('--FLAG', dest='FLAG', action='store_true')
     args = parser.parse_args()
     return args

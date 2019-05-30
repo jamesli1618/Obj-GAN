@@ -28,7 +28,7 @@ if sys.version_info[0] == 2:
 else:
     import pickle
 
-def prepare_data(data, device=None):
+def prepare_data(data):
     # pooled_hmaps: batch x hmap_size x hmap_size
     # hmaps: batch x max_num_roi x hmap_size x hmap_size
     # bbox_maps_fwd: batch x max_num_roi x class_num x hmap_size x hmap_size
@@ -56,15 +56,6 @@ def prepare_data(data, device=None):
         bbox_maps_bwd = Variable(bbox_maps_bwd.float()).cuda()
         bbox_fmaps = Variable(bbox_fmaps.float()).cuda()
         num_rois = Variable(num_rois).cuda()
-
-        if len(cfg.GPU_IDS) > 1:
-            imgs.to(device)
-            pooled_hmaps.to(device)
-            hmaps.to(device)
-            bbox_maps_fwd.to(device)
-            bbox_maps_bwd.to(device)
-            bbox_fmaps.to(device)
-            num_rois.to(device)
     else:
         imgs = Variable(imgs.float())
         pooled_hmaps = Variable(pooled_hmaps.float())
@@ -181,7 +172,7 @@ class TextDataset(data.Dataset):
         for i in range(len(filenames)):
             cap_path = '%s/text/%s.txt' % (data_dir, filenames[i])
             with open(cap_path, "r") as f:
-                captions = f.read().decode('utf8').split('\n')
+                captions = f.read().split('\n')
                 cnt = 0
                 for cap in captions:
                     if len(cap) == 0:
@@ -460,7 +451,7 @@ class TextDataset(data.Dataset):
                 ixtoword, wordtoix, len(ixtoword)]
 
     def load_text_data(self, data_dir, split):
-        filepath = os.path.join(data_dir, 'captions_backup2.pickle')
+        filepath = os.path.join(data_dir, 'captions.pickle')
         if not os.path.isfile(filepath):
             train_captions = self.load_captions(data_dir, self.train_names)
             test_captions = self.load_captions(data_dir, self.test_names)
@@ -546,16 +537,6 @@ class TextDataset(data.Dataset):
         pooled_hmaps, hmaps, bbox_maps_fwd, bbox_maps_bwd, bbox_fmaps, \
             rois, fm_rois, num_rois = get_hmaps_rois(self.insanns_dict[key], 
             self.imsize, self.fmsize, self.cats_index_dict)
-
-        '''print('imgs.shape: ', imgs.shape)
-        print('pooled_hmaps.shape: ', pooled_hmaps.shape)
-        print('hmaps.shape: ', hmaps.shape)
-        print('bbox_maps_fwd.shape: ', bbox_maps_fwd.shape)
-        print('bbox_maps_bwd.shape: ', bbox_maps_bwd.shape)
-        print('bbox_fmaps.shape: ', bbox_fmaps.shape)
-        print('rois.shape: ', rois.shape)
-        print('fm_rois.shape: ', fm_rois.shape)
-        print('num_rois: ', num_rois)'''
 
         return imgs, pooled_hmaps, hmaps, bbox_maps_fwd, \
             bbox_maps_bwd, bbox_fmaps, rois, fm_rois, num_rois, cls_id, key

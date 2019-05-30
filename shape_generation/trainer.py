@@ -235,7 +235,7 @@ class condGANTrainer(object):
                 ######################################################
                 data = data_iter.next()
                 imgs, pooled_hmaps, hmaps, bbox_maps_fwd, bbox_maps_bwd, bbox_fmaps, \
-                    rois, fm_rois, num_rois, class_ids, keys = prepare_data(data, self.device)
+                    rois, fm_rois, num_rois, class_ids, keys = prepare_data(data)
 
                 #######################################################
                 # (2) Generate fake images
