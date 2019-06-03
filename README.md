@@ -32,13 +32,30 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 
 **Data**
 
+1. Download our preprocessed metadata for [coco](https://drive.google.com/open?id=1GbZESaDwkpV8gH2gyo1bUogPtYu1QEPF) and merge them to `data/coco`
+2. Download [coco](http://cocodataset.org/#download) dataset, extract the images to `data/coco/images`, and extract the annotations to `data/coco/insanns`
 
 **Training**
 
+- Train box generator:
+  - `cd box_generation`
+  - `python sample.py --is_training 1`
+- Train shape generator:
+  - `cd shape_generation`
+  - `python main.py --gpu '0,1', --FLAG`
+- Train image generator:
+  - `cd image_generation`
+  - `python main.py --gpu '0,1', --FLAG`
+
 **Pretrained Model**
-- [DAMSM for coco](https://drive.google.com/open?id=1zIrXCE9F6yfbEJIbNP5-YrEe2pZcPSGJ). Download and save it to `data/coco/pretrained/`
-- [Inception v3](https://download.pytorch.org/models/inception_v3_google-1a9a5a14.pth). Download and save it to `data/coco/pretrained/`
-- [VGG19 BN](https://download.pytorch.org/models/vgg19_bn-c79401a0.pth). Download and save it to `data/coco/pretrained/`
+
+Download and save them to `data/coco/pretrained/`
+- [DAMSM for coco](https://drive.google.com/open?id=1zIrXCE9F6yfbEJIbNP5-YrEe2pZcPSGJ)
+- [Inception v3](https://download.pytorch.org/models/inception_v3_google-1a9a5a14.pth)
+- [VGG19 BN](https://download.pytorch.org/models/vgg19_bn-c79401a0.pth)
+- [Box generator](https://drive.google.com/file/d/1OTZDywt1UGzUykAXBXmvVA6aAlQzbMjv/view?usp=sharing)
+- [Shape generator](https://drive.google.com/file/d/1vyfXxh4eC1ccs9XNhC8OIylErhwLdvmN/view?usp=sharing)
+- Image generator will be released soon.
 
 **Sampling**
 
