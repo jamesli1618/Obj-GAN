@@ -48,6 +48,7 @@ def parse_args():
     parser.add_argument('--LAYER_D_NUM', type=int, default=4)
     parser.add_argument('--BATCH_SIZE', type=int, default=24)
     parser.add_argument('--BRANCH_NUM', type=int, default=3)
+    parser.add_argument('--FLAG', dest='FLAG', action='store_true')
 
     args = parser.parse_args()
     return args
@@ -78,6 +79,7 @@ if __name__ == "__main__":
     cfg.GAN.LAYER_D_NUM = args.LAYER_D_NUM
     cfg.TRAIN.BATCH_SIZE = args.BATCH_SIZE
     cfg.TREE.BRANCH_NUM = args.BRANCH_NUM
+    cfg.TRAIN.FLAG = args.FLAG
 
     if args.gpu_ids != '-1':
         cfg.GPU_IDS = [int(gpu_id) for gpu_id in args.gpu_ids.split(',')]
