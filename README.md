@@ -37,11 +37,11 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 
 **Pretrained Model**
 Download and save them to `data/coco/pretrained/`
-- [DAMSM for coco](https://drive.google.com/open?id=1zIrXCE9F6yfbEJIbNP5-YrEe2pZcPSGJ). 
-- [Inception v3](https://download.pytorch.org/models/inception_v3_google-1a9a5a14.pth).
-- [VGG19 BN](https://download.pytorch.org/models/vgg19_bn-c79401a0.pth).
-- [Box generator](https://drive.google.com/file/d/1OTZDywt1UGzUykAXBXmvVA6aAlQzbMjv/view?usp=sharing).
-- [Shape generator](https://drive.google.com/file/d/1vyfXxh4eC1ccs9XNhC8OIylErhwLdvmN/view?usp=sharing).
+- [DAMSM for coco](https://drive.google.com/open?id=1zIrXCE9F6yfbEJIbNP5-YrEe2pZcPSGJ)
+- [Inception v3](https://download.pytorch.org/models/inception_v3_google-1a9a5a14.pth)
+- [VGG19 BN](https://download.pytorch.org/models/vgg19_bn-c79401a0.pth)
+- [Box generator](https://drive.google.com/file/d/1OTZDywt1UGzUykAXBXmvVA6aAlQzbMjv/view?usp=sharing)
+- [Shape generator](https://drive.google.com/file/d/1vyfXxh4eC1ccs9XNhC8OIylErhwLdvmN/view?usp=sharing)
 
 **Sampling**
 
