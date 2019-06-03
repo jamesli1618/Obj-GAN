@@ -32,8 +32,8 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 
 **Data**
 
-1. Download our preprocessed metadata for coco and save them to `data/`
-3. Download [coco](http://cocodataset.org/#download) dataset and extract the images to `data/coco/images`
+1. Download our preprocessed metadata for [coco](https://drive.google.com/open?id=1GbZESaDwkpV8gH2gyo1bUogPtYu1QEPF) and merge them to `data/coco`
+2. Download [coco](http://cocodataset.org/#download) dataset, extract the images to `data/coco/images`, and extract the annotations to `data/coco/insanns`
 
 **Training**
 
