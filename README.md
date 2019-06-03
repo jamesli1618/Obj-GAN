@@ -37,6 +37,16 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 
 **Training**
 
+- Train box generator:
+  - `cd box_generation`
+  - `python sample.py --is_training 1`
+- Train shape generator:
+  - `cd shape_generation`
+  - `python main.py --gpu '0,1', --FLAG`
+- Train image generator:
+  - `cd image_generation`
+  - `python main.py --gpu '0,1', --FLAG`
+
 **Pretrained Model**
 
 Download and save them to `data/coco/pretrained/`
