@@ -352,7 +352,7 @@ def vgg19_bn(pretrained=False, **kwargs):
         kwargs['init_weights'] = False
     model = VGG(make_layers(vgg_cfg['E'], batch_norm=True), **kwargs)
     if pretrained:
-        model_path = cfg.TRAIN.NET_E.replace('text_encoder100.pth', 'vgg19_bn-c79401a0.pth')
+        model_path = cfg.TRAIN.NET_E.replace('shape_ckpt/text_encoder100.pth', 'vgg19_bn-c79401a0.pth')
         state_dict = torch.load(model_path, map_location=lambda storage, loc: storage)
         model.load_state_dict(state_dict)
         for param in model.parameters():
