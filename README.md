@@ -32,6 +32,8 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 
 **Data**
 
+1. Download our preprocessed metadata for [coco] and save them to `data/`
+3. Download [coco](http://cocodataset.org/#download) dataset and extract the images to `data/coco/images`
 
 **Training**
 
@@ -43,6 +45,7 @@ Download and save them to `data/coco/pretrained/`
 - [VGG19 BN](https://download.pytorch.org/models/vgg19_bn-c79401a0.pth)
 - [Box generator](https://drive.google.com/file/d/1OTZDywt1UGzUykAXBXmvVA6aAlQzbMjv/view?usp=sharing)
 - [Shape generator](https://drive.google.com/file/d/1vyfXxh4eC1ccs9XNhC8OIylErhwLdvmN/view?usp=sharing)
+- [Image generator] released soon.
 
 **Sampling**
 
