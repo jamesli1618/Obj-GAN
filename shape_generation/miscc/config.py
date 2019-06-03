@@ -32,7 +32,7 @@ __C.TRAIN.DISCRIMINATOR_LR = 2e-4
 __C.TRAIN.GENERATOR_LR = 2e-4
 __C.TRAIN.RNN_GRAD_CLIP = 0.25
 __C.TRAIN.FLAG = True
-__C.TRAIN.NET_E = '/pretrained/shape_ckpt/text_encoder100.pth'
+__C.TRAIN.NET_E = '/pretrained/text_encoder100.pth'
 __C.TRAIN.NET_G = ''
 
 __C.TRAIN.SMOOTH = edict()
