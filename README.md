@@ -36,6 +36,7 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 **Training**
 
 **Pretrained Model**
+
 Download and save them to `data/coco/pretrained/`
 - [DAMSM for coco](https://drive.google.com/open?id=1zIrXCE9F6yfbEJIbNP5-YrEe2pZcPSGJ)
 - [Inception v3](https://download.pytorch.org/models/inception_v3_google-1a9a5a14.pth)
