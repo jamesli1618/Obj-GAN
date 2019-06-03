@@ -26,22 +26,22 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--train_path', action='store', dest='train_path', 
-    default='../data/coco/bbox_label/input_train2014.txt',
+    default='../data/coco/box_label/input_train2014.txt',
     help='Path to train data')
 parser.add_argument('--dev_path', action='store', dest='dev_path', 
-    default='../data/coco/bbox_label/input_val2014.txt',
+    default='../data/coco/box_label/input_val2014.txt',
     help='Path to dev data')
 parser.add_argument('--train_filename_path', action='store', dest='train_filename_path', 
-    default='../data/coco/bbox_label/filenames_train2014.txt',
+    default='../data/coco/box_label/filenames_train2014.txt',
     help='Path to train filename data')
 parser.add_argument('--dev_filename_path', action='store', dest='dev_filename_path', 
-    default='../data/coco/bbox_label/filenames_val2014.txt',
+    default='../data/coco/box_label/filenames_val2014.txt',
     help='Path to dev filename data')
 parser.add_argument('--mean_std_path', action='store', dest='mean_std_path', 
-    default='../data/coco/bbox_label/mean_std_train2014.txt',
+    default='../data/coco/box_label/mean_std_train2014.txt',
     help='Path to dev data')
 parser.add_argument('--gaussian_dict_path', action='store', dest='gaussian_dict_path', 
-    default='../data/coco/bbox_label/gaussian_dict.npy',
+    default='../data/coco/box_label/gaussian_dict.npy',
     help='Path to gaussian dict')
 parser.add_argument('--vocab_path', action='store', dest='vocab_path', 
     default='../data/coco/captions.pickle',
@@ -53,7 +53,7 @@ parser.add_argument('--expt_dir', action='store', dest='expt_dir', default='expe
     help='Path to experiment directory. If load_checkpoint is True, \
     then path to checkpoint directory has to be provided')
 parser.add_argument('--load_checkpoint', action='store', dest='load_checkpoint', 
-    default='../data/pretrained/coco/bbox_ckpt', help='The name of the checkpoint to load, \
+    default='../data/pretrained/coco/box_ckpt', help='The name of the checkpoint to load, \
     usually an encoded time string')
 parser.add_argument('--resume', action='store_true', dest='resume', default=False, 
     help='Indicates if training has to be resumed from the latest checkpoint')
@@ -63,9 +63,9 @@ parser.add_argument('--gmm_comp_num', type=int, default=5, help='The number of G
 parser.add_argument('--lamda1', type=float, default=1.0, 
     help='The balancing parameter for label loss.')
 parser.add_argument('--lamda2', type=float, default=1.0, 
-    help='The balancing parameter for bbox loss.')
+    help='The balancing parameter for box loss.')
 parser.add_argument('--count_smooth', type=float, default=1e5, 
-    help='The balancing parameter for bbox loss.')
+    help='The balancing parameter for box loss.')
 parser.add_argument('--is_training', type=int, default=1, help='The state for training or test')
 parser.add_argument('--max_len', type=int, default=150, help='The max length for sequences')
 parser.add_argument('--min_len', type=int, default=1, help='The min length for sequences')
