@@ -74,7 +74,7 @@ parser.add_argument('--early_stop_len', type=int, default=10,
 parser.add_argument('--output_opt', type=int, default=0, help='The output option (0/1)')
 parser.add_argument('--embedding_dim', type=int, default=256, help='The embedding dimension')
 parser.add_argument('--encoder_path', type=str, 
-    default='../data/coco/DAMSMencoders/coco/text_encoder100.pth', 
+    default='../data/coco/pretrained/text_encoder100.pth', 
     help='encoder path.')
 
 opt = parser.parse_args()
