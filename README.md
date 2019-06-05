@@ -1,7 +1,7 @@
 # Obj-GAN
 ## Obj-GAN - Official PyTorch Implementation
 
-Pytorch implementation for reproducing Obj-GAN results in the paper [Object-driven Text-to-Image Synthesis via Adversarial Training](https://arxiv.org/pdf/1902.10740.pdf) by [Wenbo Li](https://www.albany.edu/~wl523363/main.html)*, [Pengchuan Zhang](https://www.microsoft.com/en-us/research/people/penzhan/)*, Lei Zhang, Qiuyuan Huang, Xiaodong He, Siwei Lyu, Jianfeng Gao. (This work was performed when Wenbo was an intern with Microsoft Research).
+Pytorch implementation for reproducing Obj-GAN results in the paper [Object-driven Text-to-Image Synthesis via Adversarial Training](https://arxiv.org/pdf/1902.10740.pdf) by [Wenbo Li*](https://www.albany.edu/~wl523363/main.html), [Pengchuan Zhang*](https://www.microsoft.com/en-us/research/people/penzhan/), [Lei Zhang](https://www.microsoft.com/en-us/research/people/leizhang/), [Qiuyuan Huang](https://www.microsoft.com/en-us/research/people/qihua/), [Xiaodong He](https://air.jd.com/people-detail.html?id=2), [Siwei Lyu](http://www.cs.albany.edu/~lsw/index.html), [Jianfeng Gao](https://www.microsoft.com/en-us/research/people/jfgao/). (This work was performed when Wenbo was an intern with Microsoft Research).
 
 <img src="step_vis.png"/>
 
