@@ -43,11 +43,11 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 - Train shape generator:
   - `cd shape_generation`
   - `./make.sh`
-  - `python main.py --gpu '0,1', --FLAG`
+  - `python main.py --gpu '0,1' --FLAG`
 - Train image generator:
   - `cd image_generation`
   - `./make.sh`
-  - `python main.py --gpu '0,1', --FLAG`
+  - `python main.py --gpu '0,1' --FLAG`
 
 **Pretrained Model**
 
@@ -66,10 +66,10 @@ Download and save them to `data/coco/pretrained/`
   - `python sample.py --is_training 0 --load_checkpoint [replace with your ckpt path]`
 - Run shape generator:
   - `cd shape_generation`
-  - `python main.py --gpu '0,1', --NET_G [replace with your ckpt path]`
+  - `python main.py --gpu '0,1' --NET_G [replace with your ckpt path]`
 - Run image generator:
   - `cd image_generation`
-  - `python main.py --gpu '0,1', --NET_G [replace with your ckpt path]`
+  - `python main.py --gpu '0,1' --NET_G [replace with your ckpt path]`
 
 **More Results**
 <img src="example.png"/>
