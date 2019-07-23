@@ -59,7 +59,7 @@ Download and save them to `data/coco/pretrained/`
 - [Shape generator](https://drive.google.com/file/d/1vyfXxh4eC1ccs9XNhC8OIylErhwLdvmN/view?usp=sharing)
 - [Image generator](https://drive.google.com/file/d/1BWXJT5Wg0x0Ajatgb2VdSQG14ndG8CGM/view?usp=sharing)
 
-Note that we have made some modifications (changing the obj attention estimation from "dot product between Glove embeddings" to "cosine similarity between Glove embeddings") based on the code for CVPR submission, and trained 120 epochs using batch size 16. Compared to the results in the paper, the updated results are better on FID and R-prsn scores, and worse on Inception score (because I do not get a chance to train the model using larger batch size).
+Note that we have made some modifications (changing the obj attention estimation from "dot product between Glove embeddings" to "cosine similarity between Glove embeddings") based on the code for CVPR submission, and trained 120 epochs using batch size 16. Compared to the results in the paper, the updated results are better on FID and R-prsn scores, and worse on Inception score (because we do not get a chance to train the model using larger batch size).
 
 | Methods  | Inception :arrow_up: | FID :arrow_down: | R-prsn :arrow_up: |
 | ------------- | ------------- | ------------- | ------------- |
