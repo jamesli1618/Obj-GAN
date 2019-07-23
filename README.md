@@ -62,12 +62,11 @@ Download and save them to `data/coco/pretrained/`
 Note that we have made some modifications based on the code for CVPR submission, and trained 120 epochs using batch size 16. Compared to the results in the paper, the updated results are better on FID and R-prsn scores, and worse on Inception score (because I do not get a chance to train the model using larger batch size).
 
 | Methods  | Inception :arrow_up: | FID :arrow_down: | R-prsn :arrow_up: |
-| ------------- | ------------- |
 | Obj-GAN (pred box & pred shp)  | 27.32 ± 0.40 | 24.70 | 91.91 ± 2.37 |
 | Obj-GAN (gt box & pred shp)  | 28.22 ± 0.35 | 22.67 | 93.00 ± 2.15 |
 | Obj-GAN (gt box & gt shp)  | 31.01 ± 0.27 | 17.03 | 94.42 ± 2.03 |
 
-Note for optimizing the Inception score (though it is boring):
+Tips for optimizing the Inception score (though it is boring):
 - Increase the batch size as large as possible via distributed training
 - Increase the weight for the DAMSM loss
 
