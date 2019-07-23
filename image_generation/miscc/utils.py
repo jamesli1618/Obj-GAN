@@ -13,6 +13,7 @@ from copy import deepcopy
 import skimage.transform
 import ntpath
 import random
+from scipy import linalg
 
 from miscc.config import cfg
 from models.roi_align.modules.roi_align import RoIAlignAvg
